@@ -34,7 +34,7 @@ public int i;
       {
         yield return new WaitForSeconds(5);
         i++;
-        Instantiate(enemy, new Vector3(Random.Range(-10f, 10f), 0.5f, Random.Range(10f, 2500f)), Quaternion.identity);
+        Instantiate(enemy, new Vector3(Random.Range(-10f, 10f), 0.5f, Random.Range(10f, i * 25f)), Quaternion.identity);
       }
     }
 }
